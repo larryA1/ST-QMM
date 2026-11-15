@@ -1,0 +1,18 @@
+{
+  "case": "West_Gate_Tunnel_VIC",
+  "threshold": -1.000001,
+  "validation_selected_threshold": -0.0941052324469831,
+  "detector_enabled": false,
+  "selection_split": "held-out Step06 calibration validation split",
+  "selection_metric": "balanced accuracy",
+  "ambiguity_rule": "true_tunnel == 1 or quality_state contains blackout",
+  "score_semantics": "maximum QMM expectation over inference-style candidates at noisy/causally-imputed XY",
+  "chance_level_detector": true,
+  "balanced_accuracy": 0.5,
+  "sensitivity": 0.0,
+  "specificity": 1.0,
+  "tp": 0,
+  "tn": 119,
+  "fp": 0,
+  "fn": 40
+}

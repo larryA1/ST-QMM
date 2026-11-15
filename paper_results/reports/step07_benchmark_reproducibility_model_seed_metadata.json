@@ -1,0 +1,15 @@
+{
+  "runs": 100,
+  "base_seed": 42,
+  "radius": 60.0,
+  "fallback_k": 10,
+  "max_points": 350,
+  "regenerate_trajectories_per_run": false,
+  "mode": "validation-selected-calibrated-weights-with-seeded-complete-held-out-truck-trajectories-and-complementary-classical-training",
+  "weights_source": "Step06 minimum held-out validation pairwise hinge-ranking-loss restart per case",
+  "confidence_threshold_source": "per-case Step06 held-out validation balanced-accuracy selection; benchmark trajectories excluded",
+  "confidence_score_semantics": "maximum QMM expectation over inference-style candidates at noisy/causally-imputed XY",
+  "per_fix_output": "results/reports/step07_benchmark_per_fix_paths.csv",
+  "classical_selection": "five MLP configurations and five RBF-SVM configurations selected by balanced accuracy using trucks disjoint from each complete held-out evaluation trajectory",
+  "level_ekf_hmm": "causal graph-constrained soft road-level probability filter feeding a constant-velocity EKF and HMM/Viterbi decoder; true_layer is evaluation-only"
+}

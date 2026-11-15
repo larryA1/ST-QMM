@@ -1,0 +1,18 @@
+{
+  "case": "NorthConnex_NSW",
+  "threshold": 0.040192044045167255,
+  "validation_selected_threshold": 0.040192044045167255,
+  "detector_enabled": true,
+  "selection_split": "held-out Step06 calibration validation split",
+  "selection_metric": "balanced accuracy",
+  "ambiguity_rule": "true_tunnel == 1 or quality_state contains blackout",
+  "score_semantics": "maximum QMM expectation over inference-style candidates at noisy/causally-imputed XY",
+  "chance_level_detector": false,
+  "balanced_accuracy": 0.562346588119784,
+  "sensitivity": 0.23809523809523808,
+  "specificity": 0.8865979381443299,
+  "tp": 15,
+  "tn": 86,
+  "fp": 11,
+  "fn": 48
+}

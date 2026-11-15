@@ -1,0 +1,18 @@
+{
+  "case": "M80_Princes_Freeway_VIC",
+  "threshold": 0.14268669795505812,
+  "validation_selected_threshold": 0.14268669795505812,
+  "detector_enabled": true,
+  "selection_split": "held-out Step06 calibration validation split",
+  "selection_metric": "balanced accuracy",
+  "ambiguity_rule": "true_tunnel == 1 or quality_state contains blackout",
+  "score_semantics": "maximum QMM expectation over inference-style candidates at noisy/causally-imputed XY",
+  "chance_level_detector": false,
+  "balanced_accuracy": 0.7611464968152866,
+  "sensitivity": 1.0,
+  "specificity": 0.5222929936305732,
+  "tp": 3,
+  "tn": 82,
+  "fp": 75,
+  "fn": 0
+}

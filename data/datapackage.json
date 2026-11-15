@@ -1,0 +1,211 @@
+{
+  "name": "st-qmm-road-networks",
+  "title": "ST-QMM audited road networks and synthetic truck trajectories",
+  "description": "Six audited 3D road networks for complex Australian interchanges and tunnels, built from OpenStreetMap topology enriched with openly licensed state road and speed-zone data, and the synthetic GNSS truck trajectories generated on them. Released with the ST-QMM pipeline code.",
+  "homepage": "https://github.com/larryA1/ST-QMM",
+  "version": "1.0.0",
+  "created": "2026-10-25T00:00:00Z",
+  "contributors": [
+    {
+      "title": "Larry M. Arjomandi",
+      "role": "author"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "ODbL-1.0",
+      "path": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "title": "Open Data Commons Open Database License 1.0"
+    }
+  ],
+  "sources": [
+    {
+      "title": "OpenStreetMap (© OpenStreetMap contributors)",
+      "path": "https://www.openstreetmap.org/copyright",
+      "licenses": [
+        {
+          "name": "ODbL-1.0",
+          "path": "https://opendatacommons.org/licenses/odbl/1-0/"
+        }
+      ]
+    },
+    {
+      "title": "Vicmap Transport - Road Line (© State of Victoria, Department of Energy, Environment and Climate Action)",
+      "path": "https://discover.data.vic.gov.au/dataset/vicmap-transport-road-line",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0 International"
+        }
+      ]
+    },
+    {
+      "title": "NSW Transport Theme - Road Segment (© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW))",
+      "path": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Transport_Theme/FeatureServer/5",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0 International"
+        }
+      ]
+    },
+    {
+      "title": "Speed Zones, Victoria (© State of Victoria, Department of Transport and Planning)",
+      "path": "https://opendata.transport.vic.gov.au/dataset/975b80b9-e530-46e2-80a5-54002765e81a",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0 International"
+        }
+      ]
+    },
+    {
+      "title": "Speed Zones, New South Wales (source: Transport for NSW)",
+      "path": "https://opendata.transport.nsw.gov.au/data/dataset/4253a054-b377-4b5b-83d1-71385bb6ff33",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0 International"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "network-domain-tunnel-vic",
+      "path": "graphs/step01_Domain_Tunnel_VIC_unified.graphml",
+      "title": "Domain Tunnel VIC road network",
+      "description": "350 nodes, 581 edges",
+      "format": "graphml",
+      "mediatype": "application/graphml+xml",
+      "encoding": "utf-8",
+      "bytes": 1092440,
+      "hash": "sha256:d788232b50877e1cfd649e10b8b1f2079be9992d342f601ce75be15de6d95280"
+    },
+    {
+      "name": "network-light-horse-interchange-nsw",
+      "path": "graphs/step01_Light_Horse_Interchange_NSW_unified.graphml",
+      "title": "Light Horse Interchange NSW road network",
+      "description": "130 nodes, 181 edges",
+      "format": "graphml",
+      "mediatype": "application/graphml+xml",
+      "encoding": "utf-8",
+      "bytes": 347164,
+      "hash": "sha256:861d40c746103eacdb93f1ce81a8a9ae0533a23f7584b487340fe05518fbc36f"
+    },
+    {
+      "name": "network-m80-princes-freeway-vic",
+      "path": "graphs/step01_M80_Princes_Freeway_VIC_unified.graphml",
+      "title": "M80 Princes Freeway VIC road network",
+      "description": "127 nodes, 188 edges",
+      "format": "graphml",
+      "mediatype": "application/graphml+xml",
+      "encoding": "utf-8",
+      "bytes": 366558,
+      "hash": "sha256:6c284e63d6f97f08ad612cc2d415eb15170bcb6e39ec2a158af0913ea6cafb68"
+    },
+    {
+      "name": "network-northconnex-nsw",
+      "path": "graphs/step01_NorthConnex_NSW_unified.graphml",
+      "title": "NorthConnex NSW road network",
+      "description": "105 nodes, 177 edges",
+      "format": "graphml",
+      "mediatype": "application/graphml+xml",
+      "encoding": "utf-8",
+      "bytes": 510486,
+      "hash": "sha256:2a45999acf963d3848bb560328f143903c9ee6acae0871506cc28820358e42d7"
+    },
+    {
+      "name": "network-rozelle-interchange-nsw",
+      "path": "graphs/step01_Rozelle_Interchange_NSW_unified.graphml",
+      "title": "Rozelle Interchange NSW road network",
+      "description": "180 nodes, 315 edges",
+      "format": "graphml",
+      "mediatype": "application/graphml+xml",
+      "encoding": "utf-8",
+      "bytes": 624718,
+      "hash": "sha256:34b21d3eef7de53bedfa90ee54b2459e92dc73d2a952e728574adca06f109a74"
+    },
+    {
+      "name": "network-west-gate-tunnel-vic",
+      "path": "graphs/step01_West_Gate_Tunnel_VIC_unified.graphml",
+      "title": "West Gate Tunnel VIC road network",
+      "description": "173 nodes, 244 edges",
+      "format": "graphml",
+      "mediatype": "application/graphml+xml",
+      "encoding": "utf-8",
+      "bytes": 456210,
+      "hash": "sha256:0e61807948b02715c3d7e4a93ed9a8ef5a1921da48c3eb5896180123e7dfc0e5"
+    },
+    {
+      "name": "trajectories-domain-tunnel-vic",
+      "path": "trajectories/step03_Domain_Tunnel_VIC_trajectories_v5.csv",
+      "title": "Domain Tunnel VIC synthetic truck trajectories",
+      "description": "180 trucks, 36000 fixes",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 13944919,
+      "hash": "sha256:fc7b21d5988c87dbf9e80c3f05c5105b11a164a1bfb2cf4b901b9936560f2b42"
+    },
+    {
+      "name": "trajectories-light-horse-interchange-nsw",
+      "path": "trajectories/step03_Light_Horse_Interchange_NSW_trajectories_v5.csv",
+      "title": "Light Horse Interchange NSW synthetic truck trajectories",
+      "description": "180 trucks, 16200 fixes",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 6186196,
+      "hash": "sha256:9f8bc44a3e26f10e01b43882b819970ddd890e3ae01ceeca366887d259716c71"
+    },
+    {
+      "name": "trajectories-m80-princes-freeway-vic",
+      "path": "trajectories/step03_M80_Princes_Freeway_VIC_trajectories_v5.csv",
+      "title": "M80 Princes Freeway VIC synthetic truck trajectories",
+      "description": "180 trucks, 9000 fixes",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 3337696,
+      "hash": "sha256:57c72d3a1872cb0fc5428e13228136267fc08b09bd805e1f52877ef6022f6c23"
+    },
+    {
+      "name": "trajectories-northconnex-nsw",
+      "path": "trajectories/step03_NorthConnex_NSW_trajectories_v5.csv",
+      "title": "NorthConnex NSW synthetic truck trajectories",
+      "description": "180 trucks, 36000 fixes",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 13143679,
+      "hash": "sha256:6783c37e9de1f271fbc24272da6826ca35cf40ddfa2659a101d8d80f3858720e"
+    },
+    {
+      "name": "trajectories-rozelle-interchange-nsw",
+      "path": "trajectories/step03_Rozelle_Interchange_NSW_trajectories_v5.csv",
+      "title": "Rozelle Interchange NSW synthetic truck trajectories",
+      "description": "180 trucks, 36000 fixes",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 13915771,
+      "hash": "sha256:59f7afe82d7f896601aee2b11c0e9b44be9b5c10860297ba185b57c285294376"
+    },
+    {
+      "name": "trajectories-west-gate-tunnel-vic",
+      "path": "trajectories/step03_West_Gate_Tunnel_VIC_trajectories_v5.csv",
+      "title": "West Gate Tunnel VIC synthetic truck trajectories",
+      "description": "180 trucks, 36000 fixes",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 14655065,
+      "hash": "sha256:bf6e510ce783318fe8e80e2e4d50575e40aea5853db77e487c7290230cc8ead3"
+    }
+  ]
+}

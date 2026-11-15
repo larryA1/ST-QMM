@@ -1,0 +1,18 @@
+{
+  "case": "Light_Horse_Interchange_NSW",
+  "threshold": 0.2916625917910409,
+  "validation_selected_threshold": 0.2916625917910409,
+  "detector_enabled": true,
+  "selection_split": "held-out Step06 calibration validation split",
+  "selection_metric": "balanced accuracy",
+  "ambiguity_rule": "true_tunnel == 1 or quality_state contains blackout",
+  "score_semantics": "maximum QMM expectation over inference-style candidates at noisy/causally-imputed XY",
+  "chance_level_detector": false,
+  "balanced_accuracy": 0.5178571428571429,
+  "sensitivity": 0.9,
+  "specificity": 0.1357142857142857,
+  "tp": 18,
+  "tn": 19,
+  "fp": 121,
+  "fn": 2
+}

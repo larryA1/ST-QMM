@@ -1,0 +1,18 @@
+{
+  "case": "Domain_Tunnel_VIC",
+  "threshold": 0.03819413214620232,
+  "validation_selected_threshold": 0.03819413214620232,
+  "detector_enabled": true,
+  "selection_split": "held-out Step06 calibration validation split",
+  "selection_metric": "balanced accuracy",
+  "ambiguity_rule": "true_tunnel == 1 or quality_state contains blackout",
+  "score_semantics": "maximum QMM expectation over inference-style candidates at noisy/causally-imputed XY",
+  "chance_level_detector": false,
+  "balanced_accuracy": 0.5323984526112185,
+  "sensitivity": 0.18181818181818182,
+  "specificity": 0.8829787234042553,
+  "tp": 12,
+  "tn": 83,
+  "fp": 11,
+  "fn": 54
+}

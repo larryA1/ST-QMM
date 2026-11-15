@@ -1,0 +1,18 @@
+{
+  "case": "Rozelle_Interchange_NSW",
+  "threshold": -0.0026670362957496663,
+  "validation_selected_threshold": -0.0026670362957496663,
+  "detector_enabled": true,
+  "selection_split": "held-out Step06 calibration validation split",
+  "selection_metric": "balanced accuracy",
+  "ambiguity_rule": "true_tunnel == 1 or quality_state contains blackout",
+  "score_semantics": "maximum QMM expectation over inference-style candidates at noisy/causally-imputed XY",
+  "chance_level_detector": false,
+  "balanced_accuracy": 0.6541125541125541,
+  "sensitivity": 0.32727272727272727,
+  "specificity": 0.9809523809523809,
+  "tp": 18,
+  "tn": 103,
+  "fp": 2,
+  "fn": 37
+}

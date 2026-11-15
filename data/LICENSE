@@ -1,0 +1,78 @@
+Licence for the data in this directory
+======================================
+
+The road networks (graphs/*.graphml) and the synthetic truck trajectories
+(trajectories/*.csv) in this directory are a database derived from
+OpenStreetMap and are made available under the Open Data Commons Open
+Database License (ODbL) 1.0:
+
+    https://opendatacommons.org/licenses/odbl/1-0/
+
+Portions of the database are adapted from material licensed under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0). Those
+portions remain subject to the attribution terms of that licence:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+The MIT licence in ../LICENSE covers the pipeline code only. It does not
+apply to the data in this directory.
+
+
+Attribution
+-----------
+
+Contains information from OpenStreetMap, (c) OpenStreetMap contributors,
+which is made available under the ODbL 1.0.
+    https://www.openstreetmap.org/copyright
+
+Contains material adapted from the following datasets, each licensed under
+CC BY 4.0:
+
+  Vicmap Transport - Road Line
+    (c) State of Victoria, Department of Energy, Environment and Climate Action
+    https://discover.data.vic.gov.au/dataset/vicmap-transport-road-line
+
+  NSW Transport Theme - Road Segment
+    (c) State of New South Wales (Spatial Services, a business unit of the
+    Department of Customer Service NSW). For current information go to
+    spatial.nsw.gov.au.
+    https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Transport_Theme/FeatureServer/5
+
+  Speed Zones (Victoria)
+    (c) State of Victoria, Department of Transport and Planning
+    https://opendata.transport.vic.gov.au/dataset/975b80b9-e530-46e2-80a5-54002765e81a
+
+  Speed Zones (New South Wales)
+    Source: Transport for NSW
+    https://opendata.transport.nsw.gov.au/data/dataset/4253a054-b377-4b5b-83d1-71385bb6ff33
+
+SOURCES.json records the exact download addresses, the build time and the
+SHA-256 digest of each downloaded input.
+
+
+Changes made to the source data
+-------------------------------
+
+OSM roads were filtered to operational truck-accessible edges within 2 km of
+each study centre. The reference road layers were clipped to the study
+windows, re-coded to a common schema and matched to OSM edges to add names,
+tunnel and bridge structure, status and travel direction. Posted speeds were
+assigned from the speed-zone lines. Uncovered reference tunnel segments were
+added as new edges. Every matched or added edge records its source and match
+scores in its ref_* attributes.
+
+The trajectories are synthetic. They were generated on these networks by
+step03_generate_quantum_trajectories.py and contain no real vehicle,
+location or personal data.
+
+
+No endorsement and no warranty
+------------------------------
+
+The publishers listed above do not endorse this work. The data is provided
+"as is", without warranty of any kind, express or implied, including
+accuracy, completeness or fitness for a particular purpose. It is a research
+artefact and must not be used for navigation or operational decisions.
+
+Each network file repeats these notices in its graph-level license,
+license_url, attribution, modifications and disclaimer attributes.

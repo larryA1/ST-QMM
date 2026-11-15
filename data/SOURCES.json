@@ -1,0 +1,115 @@
+{
+  "built_utc": "2026-10-22T21:12:58+00:00",
+  "window_half_width_m": 3500.0,
+  "speed_min_coverage": 0.3,
+  "speed_match_buffer_m": 10.0,
+  "speed_max_axis_difference_deg": 20.0,
+  "states": {
+    "vic": {
+      "output": "Roads/Open/Standard/vic_roads.geojson",
+      "roads": {
+        "url": "https://opendata.maps.vic.gov.au/geoserver/wfs?typeNames=open-data-platform:tr_road",
+        "licence": "CC BY 4.0",
+        "attribution": "State of Victoria (Department of Energy, Environment and Climate Action)",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "speed_zones": {
+        "url": "https://opendata.transport.vic.gov.au/dataset/975b80b9-e530-46e2-80a5-54002765e81a/resource/47697ba7-5105-4d50-b28e-bdab06d2aed5/download/speed_zones_september_2026.geojson",
+        "licence": "CC BY 4.0",
+        "attribution": "State of Victoria (Department of Transport and Planning)",
+        "sha256": "efb64b2f97d5fb06433bcaa46830f92f89f0709def31128facff4714afe45c46",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "road_windows_sha256": {
+        "West_Gate_Tunnel_VIC": "79c9403ba2fba05c7bc0a4401a5c3d19447dc244f294bd6f1b00fb4fd8abc03a",
+        "Domain_Tunnel_VIC": "9dc1dfabffcf4c0875ab1103fb96c5a74297bc1b7f3109579d66abc4cf9700d9",
+        "M80_Princes_Freeway_VIC": "8e6a02ac3c6ac61b31bb0f845ed4715b3888bd033c96c13992203b183624825c"
+      },
+      "cases": {
+        "West_Gate_Tunnel_VIC": {
+          "segments": 6302,
+          "with_speed": 4839,
+          "subtype_counts": {
+            "ROAD": 5580,
+            "PATHWAY": 487,
+            "BRIDGE": 163,
+            "TUNNEL": 72
+          }
+        },
+        "Domain_Tunnel_VIC": {
+          "segments": 11573,
+          "with_speed": 9241,
+          "subtype_counts": {
+            "ROAD": 9325,
+            "PATHWAY": 1690,
+            "BRIDGE": 459,
+            "TUNNEL": 99
+          }
+        },
+        "M80_Princes_Freeway_VIC": {
+          "segments": 2662,
+          "with_speed": 1998,
+          "subtype_counts": {
+            "ROAD": 2357,
+            "BRIDGE": 155,
+            "PATHWAY": 150
+          }
+        }
+      }
+    },
+    "nsw": {
+      "output": "Roads/Open/Standard/nsw_roads.geojson",
+      "roads": {
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Transport_Theme/FeatureServer/5",
+        "licence": "CC BY 4.0",
+        "attribution": "State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW)",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "speed_zones": {
+        "url": "https://opendata.transport.nsw.gov.au/data/dataset/4253a054-b377-4b5b-83d1-71385bb6ff33/resource/bc2da977-65d2-4caa-a73a-48d0c8bf1100/download/speed_zones.geojson",
+        "licence": "CC BY 4.0",
+        "attribution": "Transport for NSW",
+        "sha256": "2b9b2b564e39e86b8068d70cbeb990a5f57812efb57cce273cc6cfda86b2f601",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "road_windows_sha256": {
+        "Rozelle_Interchange_NSW": "3e635aa360597002ce95a2ce090a8f8fbb792ebafd83119af9b81de740bc7d15",
+        "NorthConnex_NSW": "eab6d20c5c06f0754ace5647a3a8e6121d9e33bb027e2874a74ef7451848ec21",
+        "Light_Horse_Interchange_NSW": "d504c47762e414dfdca6f6c105df2bc9e01199239b6465321a9a3184a408fc0d"
+      },
+      "cases": {
+        "Rozelle_Interchange_NSW": {
+          "segments": 10714,
+          "with_speed": 9210,
+          "subtype_counts": {
+            "ROAD": 9465,
+            "PATHWAY": 1078,
+            "BRIDGE": 108,
+            "TUNNEL": 63
+          }
+        },
+        "NorthConnex_NSW": {
+          "segments": 5142,
+          "with_speed": 4061,
+          "subtype_counts": {
+            "ROAD": 4611,
+            "PATHWAY": 465,
+            "BRIDGE": 53,
+            "TUNNEL": 13
+          }
+        },
+        "Light_Horse_Interchange_NSW": {
+          "segments": 3208,
+          "with_speed": 2338,
+          "subtype_counts": {
+            "ROAD": 2524,
+            "PATHWAY": 608,
+            "BRIDGE": 74,
+            "TUNNEL": 2
+          }
+        }
+      }
+    }
+  },
+  "licence_labels_checked_utc": "2026-10-25"
+}

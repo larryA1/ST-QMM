@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below. The citation of the paper will be added once it is published."
+title: "ST-QMM: code and data for Quantum Feature Maps for 3D Vehicle Positioning"
+type: software
+authors:
+  - family-names: Arjomandi
+    given-names: Larry M.
+repository-code: "https://github.com/larryA1/ST-QMM"
+license:
+  - MIT
+  - ODbL-1.0
+keywords:
+  - map-matching
+  - hidden Markov model
+  - parameterized quantum circuits
+  - GNSS
+  - tunnels

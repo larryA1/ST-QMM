@@ -1,0 +1,14 @@
+# Direct third-party dependencies, at the versions used for the paper
+# (Python 3.9.6). requirements-lock.txt pins every indirect dependency too.
+geopandas==1.0.1
+matplotlib==3.9.4
+networkx==3.2.1
+numpy==1.26.4
+osmnx==2.0.7
+pandas==2.3.3
+PennyLane==0.38.0
+PennyLane-Lightning==0.38.0
+pyogrio==0.11.1
+scikit-learn==1.6.1
+scipy==1.13.1
+shapely==2.0.7
